@@ -1,8 +1,11 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
+% \usepackage[utf8]{inputenc}
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
 
-\title{Meerkat}
-\author{fujinhuizi }
+
+\title{Case Study for Insurance Modeling}
+\author{Jeanne Fu}
 \date{\today}
 
 \usepackage{natbib}
@@ -13,18 +16,50 @@
 \maketitle
 
 \section{Introduction}
-There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.
-There is another theory which states that this has already happened.
+This case study will focus on pricing strategies for a commercial auto line of business. The goal of the study is to incorporate Machine Learning to improve pricing accuracy, while maintain explainability.
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.7]{universe.jpg}
-\caption{The Universe}
-\label{fig:univerise}
-\end{figure}
+Throughout the life cycle of a insurance pricing project, there are in general six steps, and we will discuss in more detail how to use ML in each step:
+
+\begin{itemize}
+    \item Scoping (Set up a goal for the project, success criteria and/or metrics, resource, cost, etc.)
+    \item Data Preparation (Data sourcing, EDA, data cleaning)
+    \item Feature Engineering (Transformation, variable selection)
+    \item Modeling (Benchmarking, feature importance ranking, model, validation)
+    \item Implementation (Deploy model for business end-users, testing)
+    \item Monitoring (and prepare for model refreshing)
+\end{itemize}
+
+This case study will be focusing on Data Preparation, Modeling and Implementation. I will discuss about potential risks and how to manage them in the end.
+
+\section{Data Preparation}
+Put together both internal and external data sources, and prepare for modeling data.
+
+Toy data:
+https://www.kaggle.com/datasets/noordeen/insurance-premium-prediction/data
+
+\section{Feature Engineering}
+
+
+
+
+
+\section{Model Training and Validation}
+
+
+
+% \begin{figure}[h!]
+% \centering
+% \includegraphics[scale=1.7]{universe.jpg}
+% \caption{The Universe}
+% \label{fig:univerise}
+% \end{figure}
+
+\section{Potential Risks and How to Manage Them}
+
+
 
 \section{Conclusion}
-``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+% ``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
 
 \bibliographystyle{plain}
 \bibliography{references}
