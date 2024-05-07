@@ -34,18 +34,53 @@ This case study will be focusing on Data Preparation, Modeling and Implementatio
 \section{Data Preparation}
 Put together both internal and external data sources, and prepare for modeling data.
 
-Toy data:
-https://www.kaggle.com/datasets/noordeen/insurance-premium-prediction/data
+Internal data source:
+\begin{itemize}
+    \item Exposure or premium data: account information, location, primary usage of vehicle, business industry
+    \item Loss data: (Target, loss history)
+    \item Vehicle information: vehicle weight, vehicle age, vehicle value (cost new), etc. May use external VIN decoding service if needed.
+    \item     
+\end{itemize}
+
+External data source:
+\begin{itemize}
+    \item Driver information (credit history, police driving record, etc.)
+    \item Credit history (for the business)
+\end{itemize}
+
+Things to do:
+- explore missing values
+- Check distribution
+
 
 \section{Feature Engineering}
 
-
+A lot of explorations could be done here. Include but not limited to:
+\begin{itemize}
+    \item Encoding catergorical variables
+    \item Explore feature interaction
+    \item Explore feature
+\end{itemize}
 
 
 
 \section{Model Training and Validation}
 
+* Split Training, Test, Holdout (or Cross Validation)
 
+* Selection of Target variables: Frequency and Severity VS. Pure Premium
+
+Things to think about:
+\begin{itemize}
+    \item Different coverages
+    \item Outlier in pure premium
+    \item Need to develop loss (alternative to )
+    \item Need to trend
+\end{itemize}
+
+* AutoML for model Benchmarking
+
+* AutoML for model variable importance (Shapeley Value)
 
 % \begin{figure}[h!]
 % \centering

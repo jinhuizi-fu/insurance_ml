@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex document"] 1715046842 "document.aux" "document.bbl" "document" 1715046842
+["bibtex document"] 1715076028 "document.aux" "document.bbl" "document" 1715076029
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "document.aux" 1715046842 722 bdda067ae2cbf3aa50f3585a41db28e7 "pdflatex"
+  "document.aux" 1715076029 722 fbce37b323efe1de3be27f2c958b0c25 "pdflatex"
   "references.bib" 0 -1 0 ""
   (generated)
   "document.bbl"
   "document.blg"
-["pdflatex"] 1715046842 "/Users/fujinhuizi/Desktop/insurance_ml/latex_report/document.tex" "document.pdf" "document" 1715046842
-  "/Users/fujinhuizi/Desktop/insurance_ml/latex_report/document.tex" 1715046842 1950 683175b585c92aa6a2a4bf3f002f65b0 ""
+["pdflatex"] 1715076028 "/Users/fujinhuizi/Desktop/insurance_ml/latex_report/document.tex" "document.pdf" "document" 1715076029
+  "/Users/fujinhuizi/Desktop/insurance_ml/latex_report/document.tex" 1715076028 3074 0a7dfdb573e30a4e1f9ff57ae4749cf5 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -44,9 +44,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1660829265 2826448 e1d5edc2c31c67c47425d795099fc8ef ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "document.aux" 1715046842 722 bdda067ae2cbf3aa50f3585a41db28e7 "pdflatex"
+  "document.aux" 1715076029 722 fbce37b323efe1de3be27f2c958b0c25 "pdflatex"
   "document.bbl" 0 -1 0 "bibtex document"
-  "document.tex" 1715046842 1950 683175b585c92aa6a2a4bf3f002f65b0 ""
+  "document.tex" 1715076028 3074 0a7dfdb573e30a4e1f9ff57ae4749cf5 ""
   (generated)
   "document.aux"
   "document.log"
