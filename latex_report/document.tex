@@ -36,10 +36,9 @@ Put together both internal and external data sources, and prepare for modeling d
 
 Internal data source:
 \begin{itemize}
-    \item Exposure or premium data: account information, location, primary usage of vehicle, business industry
-    \item Loss data: (Target, loss history)
-    \item Vehicle information: vehicle weight, vehicle age, vehicle value (cost new), etc. May use external VIN decoding service if needed.
-    \item     
+    \item Policy data: account/policy information, exposure, location, primary usage of vehicle, business industry, etc.
+    \item Loss data: (Target, loss history). Loss linkage may be needed. 
+    \item Vehicle information: vehicle weight, vehicle age, vehicle cost, etc. May use external VIN decoding service if needed.
 \end{itemize}
 
 External data source:
@@ -49,7 +48,8 @@ External data source:
 \end{itemize}
 
 Things to do:
-- explore missing values
+- 
+Explore missing values. 
 - Check distribution
 
 
@@ -59,7 +59,7 @@ A lot of explorations could be done here. Include but not limited to:
 \begin{itemize}
     \item Encoding catergorical variables
     \item Explore feature interaction
-    \item Explore feature
+    \item Bin numerical variables, and/or explore polinomial trend
 \end{itemize}
 
 
@@ -74,13 +74,26 @@ Things to think about:
 \begin{itemize}
     \item Different coverages
     \item Outlier in pure premium
-    \item Need to develop loss (alternative to )
+    \item Need to develop loss (alternative is to use policy year as control variable)
     \item Need to trend
 \end{itemize}
 
 * AutoML for model Benchmarking
 
 * AutoML for model variable importance (Shapeley Value)
+
+Explain what is Shapeley value 
+
+Shapeley plot here
+
+How to use Shapeley Plot?
+
+\begin{itemize}
+    \item Feature importance: (explain feature importance ranking)
+    \item Outlier detection
+    \item 
+    \item 
+\end{itemize}
 
 % \begin{figure}[h!]
 % \centering
