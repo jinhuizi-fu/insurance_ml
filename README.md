@@ -6,4 +6,12 @@ This project explores a toy insurance dataset from https://data.mendeley.com/dat
 
 Exploration of autoML for insurance pricing.
 
+Project folder:
 
+data folder: raw toy data and prepared data
+data_prep.ipynb: data preparation code
+h2o_automl.ipynb: run AutoML for model benchmarking
+
+Latex_report folder:
+
+document.tex: write a documentation to summarize the project

@@ -32,7 +32,7 @@ Throughout the life cycle of a insurance pricing project, there are in general s
 This case study will be focusing on Data Preparation, Modeling and Implementation. I will discuss about potential risks and how to manage them in the end.
 
 \section{Data Preparation}
-Put together both internal and external data sources, and prepare for modeling data.
+In general, when preparing a modeling dataset for a pricing model, we will put together both internal and external data sources, and prepare for modeling data.
 
 Internal data source:
 \begin{itemize}
@@ -47,21 +47,23 @@ External data source:
     \item Credit history (for the business)
 \end{itemize}
 
-Things to do:
-- 
-Explore missing values. 
-- Check distribution
+In this case, I downloaded a toy dataset as a quick sample to explore different modeling methods. The source is from this website: https://data.mendeley.com/datasets/5cxyb5fp4f/1 
 
+Things to do when I have more time:
+\begin{itemize}
+    \item Explore missing values. Check why they are missing, either back fill with distribution, or define new "Missing" category.
+    \item Check distribution and transform if needed
+\end{itemize}
 
 \section{Feature Engineering}
 
 A lot of explorations could be done here. Include but not limited to:
 \begin{itemize}
     \item Encoding catergorical variables
+    \item Normalization for certain variables. For example, normalize historical claim count by a variable accounting for policy size, will help isolate the feature from account size.
     \item Explore feature interaction
     \item Bin numerical variables, and/or explore polinomial trend
 \end{itemize}
-
 
 
 \section{Model Training and Validation}
@@ -69,6 +71,7 @@ A lot of explorations could be done here. Include but not limited to:
 * Split Training, Test, Holdout (or Cross Validation)
 
 * Selection of Target variables: Frequency and Severity VS. Pure Premium
+
 
 Things to think about:
 \begin{itemize}
@@ -78,36 +81,45 @@ Things to think about:
     \item Need to trend
 \end{itemize}
 
-* AutoML for model Benchmarking
+\subsection{AutoML for model Benchmarking} 
 
-* AutoML for model variable importance (Shapeley Value)
+AutoML (automated machine learning) is a framework to run machine learning models automatically. For insurance pricing, because of regulation restrictions, GLM is still the most used model structure due to its simplicity and explainability. However, AutoML framework can be used as a first step in pricing models. 
+
+A few ways to use AutoML in pricing model:
+\begin{itemize}
+    \item Model benchmarking: AutoML can run multiple machine learning models at one time, so we can compare the performance of different models.
+    \item Variable importance ranking: Shapley plot can be used to explore variable importance.
+    \item Partial dependence plot: like traditional one-way plot for each features VS target variable, we can examine the upward/downward trend when the feature increases/decreases.
+\end{itemize}
+ 
+\subsection{AutoML for model variable importance (Shapeley Value)} 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{shap_plot.png}
+\caption{Shapley Plot}
+\label{fig:univerise}
+\end{figure}
 
 Explain what is Shapeley value 
 
-Shapeley plot here
-
 How to use Shapeley Plot?
 
+
+
+\section{Potential Risks and How to Manage Them}
+
 \begin{itemize}
-    \item Feature importance: (explain feature importance ranking)
+    \item 
     \item Outlier detection
     \item 
     \item 
 \end{itemize}
 
-% \begin{figure}[h!]
-% \centering
-% \includegraphics[scale=1.7]{universe.jpg}
-% \caption{The Universe}
-% \label{fig:univerise}
-% \end{figure}
-
-\section{Potential Risks and How to Manage Them}
-
-
 
 \section{Conclusion}
-% ``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+
+
 
 \bibliographystyle{plain}
 \bibliography{references}
