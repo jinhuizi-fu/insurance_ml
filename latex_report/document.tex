@@ -91,6 +91,8 @@ A few ways to use AutoML in pricing model:
     \item Variable importance ranking: Shapley plot can be used to explore variable importance.
     \item Partial dependence plot: like traditional one-way plot for each features VS target variable, we can examine the upward/downward trend when the feature increases/decreases.
 \end{itemize}
+
+Output from my sample run can be checked out here: h2o_automl.ipynb
  
 \subsection{AutoML for model variable importance (Shapeley Value)} 
 
@@ -101,24 +103,24 @@ A few ways to use AutoML in pricing model:
 \label{fig:univerise}
 \end{figure}
 
-Explain what is Shapeley value 
-
-How to use Shapeley Plot?
-
+This is a beeswarm plot, that summarizes the entire distribution of SHAP values for each feature:
+\begin{itemize}
+    \item SHAP value: calculated for each record (row), SHAP values are based on game theory and assign an importance value to each feature in a model. Features with positive SHAP values positively impact the prediction, while those with negative values have a negative impact. The magnitude is a measure of how strong the effect is.
+    \item Feature importance is ranked by mean absolute SHAP value. In the plot, normalized claim count history is ranked most important.
+    \item Horizontal axis is SHAP value for each record. Each dot is a record, and they "pile up" vertically when different dots have the same value.
+\end{itemize}
 
 
 \section{Potential Risks and How to Manage Them}
 
-\begin{itemize}
-    \item 
-    \item Outlier detection
-    \item 
-    \item 
-\end{itemize}
+\textbf{Explainability} The final model could still be developed with GLM. ML benchmarking could be used to compare model performance.
+
+\textbf{Overfitting} Machine learning models tend to over-fit more than traditional models (e.g. GLM). GLM with regularization (elastic net) will have the capability to select features and prevent overfitting. Cross-validation can be used to validate model and prevent overfitting.
 
 
 \section{Conclusion}
 
+Machine learning methods could be integrated into different steps when developing an insurance princng model. It could be used in feature engineering like encoding, normalization, and interaction, etc. AutoML is good for benchmarking and comparing different model architectures. AutoML outputs feature importance ranking, and partial dependency plot, that could be used to help with modeling explainability.
 
 
 \bibliographystyle{plain}
